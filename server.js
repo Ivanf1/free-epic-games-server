@@ -4,7 +4,7 @@ const { startCacheScheduler } = require("./functions/caching");
 
 const app = express();
 
-app.listen(3001, () => {
+app.listen(process.env.PORT || 3001, () => {
   startCacheScheduler();
 });
 
