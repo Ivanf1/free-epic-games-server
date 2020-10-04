@@ -34,19 +34,19 @@ const cacheGames = (games) => {
   });
 };
 
-const getCachedGames = () => {
-  let games = null;
-  if (fs.existsSync("./cache/games.json")) {
-    games = fs
-      .readFileSync("./cache/games.json", (err) => {
-        if (err) {
-          console.log(err);
-        }
-      })
-      .toString();
-  }
-  return games;
-};
+// const getCachedGames = () => {
+//   let games = null;
+//   if (fs.existsSync("./cache/games.json")) {
+//     games = fs
+//       .readFileSync("./cache/games.json", (err) => {
+//         if (err) {
+//           console.log(err);
+//         }
+//       })
+//       .toString();
+//   }
+//   return games;
+// };
 
 const formatDate = (date) => {
   let newDate = new Date(date);
